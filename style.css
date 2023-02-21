@@ -20,7 +20,7 @@ body {
 
 .prod-img {
     background-image: url(./images/image-product-desktop.jpg);
-    width: 20rem;
+    width: 21rem;
     background-size: cover;
     background-position: center;
     border-top-left-radius: 0.8rem;
@@ -28,7 +28,7 @@ body {
 }
 
 .prod-text {
-    width: 16rem;
+    width: 17rem;
     background: white;
     padding: 2rem;
     border-bottom-right-radius: 0.8rem;
@@ -79,5 +79,20 @@ body {
     background-color: hsl(158, 36%, 37%);
     color: white;
     font-family: Montserrat, sans-serif;
-   
+}
+
+
+@media only screen and (max-width: 600px) {
+    .all-product{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40rem;
+        height: 100vh;
+    }
+    .prod-img{
+        background-image: url(./images/image-product-mobile.jpg);        
+    }
+    .prod-text {
+        border-top-right-radius: 0;
+    }
 }
